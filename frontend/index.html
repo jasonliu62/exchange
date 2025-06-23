@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Rate</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
     <div class="container">
+        <img src="assets/download.png" alt="Firm Logo" class="logo">
         <h1 id="main-title">USD to RMB Exchange Rate</h1>
+        <p>Exchange Rate data platform</p>
         <div class="controls">
             <select id="currency-pair">
                 <option value="USD-CNY">USD to CNY</option>
@@ -21,6 +24,7 @@
                 <option value="monthly">Monthly Rate</option>
             </select>
             <button id="get-rate-btn">Get Rate</button>
+            <button id="export-btn">Export to Excel</button>
         </div>
         <div id="result-container">
             
