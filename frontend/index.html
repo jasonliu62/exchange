@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">USD to RMB Exchange Rate</h1>
+        <div class="controls">
+            <select id="currency-pair">
+                <option value="USD-CNY">USD to CNY</option>
+                <option value="CNY-USD">CNY to USD</option>
+            </select>
+            <input type="date" id="start-date">
+            <select id="rate-type">
+                <option value="daily">Daily Rate</option>
+                <option value="weekly">Weekly Rate</option>
+                <option value="monthly">Monthly Rate</option>
+            </select>
+            <button id="get-rate-btn">Get Rate</button>
+        </div>
+        <div id="result-container">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
